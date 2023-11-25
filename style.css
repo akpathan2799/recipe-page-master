@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--gray-1);
+    /* border: 1px solid red; */
+
+}
+
+:root{
+    --gray-1:#333333;
+    --gray-2:#4F4F4F;
+    --gray-3:#828282;
+    --gray-4:#BDBDBD;
+    --orange:#F2994A;
+}
+
+body{
+    background-color: #FFFFFF;;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0.2rem;
+    margin: 0 auto;
+}
+
+.container-heading{
+    margin-top: 2.5rem;
+    font-family: Playfair Display;
+font-size: 3rem;
+font-weight: 700;
+color: black;
+
+text-align: left;
+
+    
+}
+
+.icon-with-paragraph{
+    margin-top: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+
+.icon-with-paragraph-content p{
+    font-family: Montserrat;
+font-size: 1rem;
+font-style: italic;
+font-weight: 500;
+/* width: 50%; */
+text-align: left;
+
+}
+.icon-with-paragraph svg{
+    margin-top: 0;
+}
+
+.container-image{
+    height: 470px;
+    margin: 1.3rem 0 1rem 0;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.ingredients-time-conatiner{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ingredients-heading{
+    font-family: Playfair Display;
+font-size: 2rem;
+color: var(--gray-1);
+font-weight: 700;
+text-align: left;
+
+}
+
+.ingredients{
+    color: var(--gray-1);
+    width: 45%;
+}
+
+.dish-heading{
+    font-family: Playfair Display;
+font-size: 1.3rem;
+font-style: italic;
+font-weight: 400;
+margin: 2rem 0;
+text-align: left;
+
+}
+
+.label-description{
+
+
+font-family: Montserrat;
+font-size: 1.2rem;
+font-weight: 400;
+/* margin: 1rem 0; */
+
+    display: block;
+
+}
+
+
+.input-with-label{
+    display:flex;
+    margin: 1.3rem 0;
+    /* grid-template-columns: auto 1fr; */
+    /* justify-items: center; */
+    gap:10px;
+    justify-content: start;
+    /* background-color: #F2994A; */
+    /* align-items: start; */
+    align-items: flex-start;
+    vertical-align: top;
+}
+
+.checkbox-input{
+    /* vertical-align: top; */
+    /* width: 25px; */
+    height: 25px;
+}
+
+.highlighted-ingredients{
+    font-family: Montserrat;
+font-size: 1.2rem;
+font-weight: 700;
+
+text-align: left;
+
+
+
+}
+
+.topping-sugesstion{
+    font-family: Montserrat;
+font-size: 1.1rem;
+font-style: italic;
+font-weight: 500;
+
+text-align: left;
+
+
+
+
+}
+
+.instruction-with-number{
+
+    display:flex;
+    margin: 3rem 0;
+   
+    gap:20px;
+    justify-content: start;
+  
+    align-items: flex-start;
+    vertical-align: top;
+
+}
+
+button{
+    padding: 0.8rem 1rem;
+    background-color: var(--orange);
+    border-radius: 6px;
+    color: white;
+    font-family: Playfair Display;
+font-size: 1.1rem;
+
+
+    border:none;
+}
+.instruction{
+    font-family: Montserrat;
+font-size: 1.2rem;
+text-align: left;
+font-weight: 400;
+
+
+}
+
+
+.time-required{
+    width: 25%; 
+    padding: 0.3rem;
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0px 0px 20px 0px #0000001A;
+
+
+}
+
+.yeild-serving{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.yeilds{
+    font-family: Montserrat;
+font-size:0.7rem;
+font-weight: 700;
+margin-bottom: 6px;
+color: var(--gray-4);
+
+
+}
+.servings{
+    font-family: Montserrat;
+font-size: 1rem;
+font-weight: 500;
+color: var(--orange);
+
+
+}
+
+.timing-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    justify-content:space-between;
+    
+}
+
+@media screen and (max-width : 900px){
+
+    .ingredients-time-conatiner{
+        width: 100%;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column-reverse;
+        /* justify-content: space-between; */
+        align-items: flex-start;
+    }
+
+    
+.time-required{
+    width: 100%; 
+    padding: 0.3rem;
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    box-shadow: 0px 0px 20px 0px #0000001A;
+
+
+}
+
+
+.timing-container{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap:15px;
+    justify-content:space-between;
+    
+}
+
+.container{
+    width: 100%;
+    
+    margin: 0 auto;
+}
+
+
+.yeild-serving{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    gap: 3px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.yeild-serving svg{
+    height: 20px;
+    width: 20px;
+}
+
+.container-image{
+    height: 213px;
+    margin: 1.3rem 0 1rem 0;
+}
+
+.ingredients {
+    color: var(--gray-1);
+    width: 100%;
+}
+
+.container-heading{
+    margin-top: 2.5rem;
+    font-family: Playfair Display;
+font-size: 1.7rem;
+font-weight: 700;
+color: black;
+
+text-align: left;
+
+    
+}
+    
+}
